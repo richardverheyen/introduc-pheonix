@@ -26,7 +26,7 @@ config :introduc, Introduc.Repo,
   ssl: true
 
 # Do not print debug messages in production
-config :logger, level: :info
+config :logger, level: :info,
 
 # ## SSL Support
 #
@@ -68,7 +68,6 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-
 
 url: [scheme: "https", host: "infinite-ravine-36934.herokuapp.com", port: 443],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],
